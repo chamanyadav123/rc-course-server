@@ -6,7 +6,7 @@ const app = express();
 
 // Apply CORS middleware
 app.use(cors({
-    origin: 'https://www.rccodex.co.in',
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true, // If cookies or other credentials are involved
